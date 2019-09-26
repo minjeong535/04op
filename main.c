@@ -4,12 +4,16 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	int x =3;
-	int cond1, cond2;
-	
-	cond1=2 < x && x<5;
-	cond2=x>1 || x<4 && x>3;
-	
-	printf("cond1=%d, cond2=%d", cond1, cond2);
+int x, y;
+
+printf("enter 2 integers :");
+scanf("%d %d", &x, &y);
+
+printf("plus is %i\n:", x+y);
+printf("minus is %i\n:", x-y);
+printf("multifly is %i\n", x*y);
+printf("division is %i\n", x/y);
+printf("na is %i\n", x%y);
+
 	return 0;
 }
